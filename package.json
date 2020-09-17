@@ -1,27 +1,26 @@
 {
   "name": "top-gun-2020",
-  "version": "1.0.0",
-  "description": "An example",
-  "engines":{
-          "node": "12.x"
+  "version": "0.0.0",
+  "private": true,
+  "description": "Example",
+  "engines": {
+    "node": "12.x"
   },
-  "main": "app.js",
+  "main": "./bin/www",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tranhd98/top-gun-2020.git"
   },
   "keywords": [
     "nodejs",
     "heroku"
   ],
-  "author": "Hung Tran",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tranhd98/top-gun-2020/issues"
-  },
-  "homepage": "https://github.com/tranhd98/top-gun-2020#readme"
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "3.0.0"
+  }
 }
